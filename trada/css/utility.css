@@ -1,0 +1,25 @@
+.center {
+    display: grid;
+    place-items: center;
+}
+.flex {
+    display: flex;
+}
+.flex-direction-c {
+    flex-direction: column;
+}
+.justify-content-sb {
+    justify-content: space-between;
+}
+.align-items-c {
+    align-items: center;
+}
+.text-align-c {
+    text-align: center;
+}
+.transistion {
+    transition: all 0.45s ease-in-out;
+}
+.d-none {
+    display: none;
+}

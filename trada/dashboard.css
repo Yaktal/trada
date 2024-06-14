@@ -1,0 +1,263 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid; */
+    width: 100%;
+}
+
+.item-list {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100px;
+}
+
+br {
+    color: black;
+    height: 40px;
+}
+
+.trada, h1 {
+    display: flex;
+}
+
+
+p {
+    color: rgb(171, 175, 174);
+    font-size: 12px;
+}
+
+.trada {
+    color: rgb(16,100,69);
+    margin-top: -20px;
+}
+
+.cart-list li {
+    text-decoration: none;
+    font-size: 15px;
+    list-style-type: none;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* margin-left: -20px; */
+    /* margin-top: -5px; */
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.cart-list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.cart-total {
+    padding-bottom: 20px;
+}
+
+.profile{
+    display: flex;
+    justify-content: center;
+    margin-left: -70px;
+}
+
+.product {
+    /* border: 1px solid black; */
+    padding: 20px;
+    border-radius: 10px;
+    margin: 5px;
+    background-color: rgb(225,233,230);
+    color: black;
+    /* font-weight: 600; */
+}
+
+.left-side-bar {
+    /* margin-right: 50px; */
+    border: 2px solid black;
+    padding: 20px;
+    display: flex;
+    width: 100px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.left-item-one-img {
+    display: flex;
+}
+
+.dash-head-one {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    margin-top: 30px;
+    /* width: 500px; */
+}
+
+.dash-head-h1 {
+    font-size: 25px;
+    color: rgba(0, 0, 0, 0.788);
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+.dash-head-two {
+    display: flex;
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.order {
+    /* border: 2px solid; */
+    width: 400px;
+    margin-top: -20px;
+    height: 500px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+}
+
+img {
+    width: 20px;
+    height: 20px;
+}
+
+.dash-btn {
+    margin-right: 10px;
+}
+
+button {
+    background-color: rgb(16,100,69);
+    border: none;
+    padding: 7px;
+    color: white;
+    border-radius: 5px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  hr {
+    margin-left: 400px;
+  }
+  
+  .dashboard {
+    text-align: center;
+    padding: 20px;
+    width: 850px;
+  }
+  
+  
+  #addProductBtn {
+    padding: 10px 20px;
+    background-color: rgb(16,100,69);
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-left: 500px;
+  }
+  
+  #addProductBtn:hover {
+    background-color: rgb(148, 172, 163);
+    transition: ease-in 0.5s;
+  }
+  
+  .popup-form {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .form-container {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%;
+    position: relative;
+  }
+  
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  h2 {
+    text-align: center;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+  }
+  
+  button[type="submit"] {
+    background-color: rgb(16,100,69);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: rgb(101, 139, 125);
+    transition: ease-in 0.5s;
+  }
+  
+  #addMoreItems {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+    color: rgb(16,100,69);
+    text-decoration: none;
+  }
+  
+  #addMoreItems:hover {
+    text-decoration: underline;
+  }
+  

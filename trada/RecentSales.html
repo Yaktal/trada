@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REcent Sales Dashboard</title>
+    <link rel="stylesheet" href="RecentSales.css">
+</head>
+<body>
+    <div class="container">
+        <nav id="sidebar" class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">trada.</div>
+                <button id="closeBtn" class="close-btn">&times;</button>
+            </div>
+            <ul class="sidebar-menu">
+                <li><a href="dashboard.html"><img src="assets\smart-home.png">Dashborad</a></li>
+                <li><a href="Analytics.html"><img src="assets\Vector (1).png">Analytics</a></li>
+                <li><a href="RecentSales.html"><img src="assets\shopping-cart.png">Recent Sales</a></li>
+                <li><a href="ProductListPage.html"><img src="assets\box.png">Product List</a></li>
+                <li><a href="Subscription.html"><img src="assets\users.png">Manage Subscription</a></li>
+            </ul>
+            <div class="sidebar-footer">
+                <div class="admin">
+                    <p>Admin</p>
+                    <p>testmail@gmail.com</p>
+                </div>
+            </div>
+        </nav>
+        <div id="content" class="content">
+            <div class="main">
+                <div class="recent-sales-header">
+                    <h2>Recent Sales</h2>
+                </div>
+                </div>
+                <section class="recent-sales">
+                    <table>
+                        <thead>
+                            <tr class="table-header">
+                                <th>Order ID</th>
+                                <th>Quantity</th>
+                                <th>Cost Price</th>
+                                <th>Selling Price</th>
+                                <th>Date</th>
+                                <th>Profit</th>
+
+                            </tr>
+                        </thead>
+                        <tbody class="sales-data">
+                            <tr class="sales-item" id="sales-item-template">
+                                <td><span class="id">#6548</span></td>
+                                <td><span class="quantity">57</span></td>
+                                <td><span class="cost-price">500</span></td>
+                                <td><span class="selling-price">1000</span></td>
+                                <td><span class="date">12-02-2024</span></td>
+                                <td><span class="profit">500</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </div>
+        </div>
+        </div>
+    </div>
+    <script src="Analytics.js"></script>
+</body>
+</html>

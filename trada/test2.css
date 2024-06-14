@@ -1,0 +1,179 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+button {
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.popup-form {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.logo {
+    font-size: 24px;
+    color: #007b5e;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+.close {
+    color: #aaa;
+   float:right;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.content {
+    margin-top: 40px;
+}
+
+.content h2 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.content p {
+    margin-bottom: 20px;
+}
+
+.product-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.product-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px 0 0;
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+}
+
+.product-name,
+.product-stock,
+.product-cost-price,
+.product-sale-price {
+    display: flex;
+    align-items: center;
+    width: 20%;
+    margin-right: 10px;
+}
+
+.product-name input,
+.product-stock input,
+.product-cost-price input,
+.product-sale-price input {
+    border: 1px solid #ddd;
+    padding: 8px;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 0.8em;
+}
+
+.add-more-items,
+.remove-items,
+.finish {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1a8755;
+    color: white;
+    font-size: 1em;
+    margin-top: 10px;
+    cursor: pointer;
+    width: fit-content;
+    margin: 10px auto;
+}
+
+.footer {
+    margin-top: 20px;
+    text-align: center;
+    color: #3a3a3a;
+    font-size: 10px;
+}
+
+@media (max-width: 360px) {
+    .popup-form {
+        padding: 15px;
+        max-width: 90%;
+        margin-bottom:150px;
+        margin-right: 30px;
+    }
+
+    .content {
+        margin-top: 20px;
+    }
+
+    .content h2,
+    .content p {
+        font-size: 0.9em;
+    }
+
+    .product-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .product-name,
+    .product-stock,
+    .product-cost-price,
+    .product-sale-price {
+        width: 80%;
+        margin-right: 0;
+    }
+
+    .add-more-items,
+    .remove-items,
+    .finish {
+        padding: 8px 16px;
+        font-size: 0.9em;
+    }
+
+    .footer {
+        font-size: 9px;
+    }
+}

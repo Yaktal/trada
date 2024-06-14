@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trada Landing Page</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="flex justify-content-sb align-items-c">
+            <section class="logo">trada.</section>
+            <section>
+                <ul class="desktop-navigation flex res-d-none">
+                    <li><a href="#contact-body">Contact Us</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="Sign-in_page.html" class="button">Login</a></li>
+                    <li><a href="Register_page.html" class="button">Register</a></li>
+                </ul>
+                    
+                <section class="bars res-d-flex flex-direction-c justify-content-sb d-none">
+                    <section class="bar transistion"></section>
+                    <section class="bar"></section>
+                    <section class="bar transistion"></section>
+                    <ul class="mobile-navigation transistion text-align-c">
+                        <li><a href="#contact-body">Contact Us</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="Sign-in_page.html">Login</a></li>
+                        <li><a href="Register_page.html">Register</a></li>
+                    </ul>
+                </section>
+            </section>
+        </nav>
+    </header>
+    <main>
+        <h1>You run your business.<br><span style="color:#007b5e; font-family: Arial, Helvetica, sans-serif;">trada.</span> will handle your records.</h1>
+    </main>
+    <footer>
+        <section id="contact-body" class="contact">
+            <h2>Contact Us</h2>
+            <p>We'd love to hear from you!</p>
+            <form id="contact-form">
+                <label for="full-name">Full Name:</label>
+                <input type="text" id="full-name" name="full-name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </footer>
+
+    
+</div>
+    <script src="landingpage.js"></script>
+</body>
+</html>

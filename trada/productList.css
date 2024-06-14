@@ -1,0 +1,136 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+.container {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px 0 30px 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 800px;
+    max-width: 90%;
+}
+
+.logo {
+    font-size: 24px;
+    color: #007b5e;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    margin-right: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.content {
+    margin-bottom: 20px;
+    padding: 20px 20px;
+}
+
+.content h2 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.content p {
+    margin-bottom: 20px;
+}
+
+.product-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.product-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px 0 0;
+    border-bottom: 1px solid #ddd;
+    width:100%;
+}
+
+.product-name{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    width: 45%;
+    margin-right: 20px;
+}
+
+.product-stock,
+.product-cost-price,
+.product-sale-price {
+    /* flex: 1; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 0;
+    width:15%;
+    margin-right: 20px;
+}
+
+.product-name input,
+.product-stock input,
+.product-cost-price input,
+.product-sale-price input {
+    border: 1px solid #ddd;
+    padding: 8px;
+    border-radius: 5px;
+    flex: 1;
+    font-size: 0.8em;
+    width:10%;
+}
+
+.product-cost-price span,
+.product-sale-price span {
+    font-size: 1.2em;
+}
+
+.add-more-items,
+.finish {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1a8755;
+    color: white;
+    font-size: 1em;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+/* .add-more-items {
+    margin-top: 10px;
+} */
+
+.footer {
+    margin-top: 20px;
+    text-align: center;
+    color: #3a3a3a;
+    font-size: 10px;
+}
+p{
+    padding-top: 30px;
+}

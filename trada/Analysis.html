@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analysis Dashboard</title>
+    <link rel="stylesheet" href="Analysis.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <nav id="sidebar" class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">trada.</div>
+                <button id="closeBtn" class="close-btn">&times;</button>
+            </div>
+            <ul class="sidebar-menu">
+                <li><a href="dashboard.html"><img src="assets\smart-home.png">Dashborad</a></li>
+                <li><a href="Analysis.html"><img src="assets\Vector (1).png">Analytics</a></li>
+                <li><a href="RecentSales.html"><img src="assets\shopping-cart.png">Recent Sales</a></li>
+                <li><a href="productsList.html"><img src="assets\box.png">Product List</a></li>
+                <li><a href="Subscription.html"><img src="assets\users.png">Manage Subscription</a></li>
+            </ul>
+            <div class="sidebar-footer">
+                <div class="admin">
+                    <p>Admin</p>
+                    <p>testmail@gmail.com</p>
+                </div>
+            </div>
+        </nav>
+        <main class="main-content">
+            <button id="openBtn" class="open-btn">&#9776;</button>
+            <header class="main-content-top">
+                <h2>Analysis</h2>
+                <div class="main-content-top-right">
+                    <img src="assets\Notification.png" style="padding-right: 10px;">
+                    <img src="assets\Avatar.png">
+                </div>
+            </header>
+            <section class="summary">
+                <div class = "card-section-1">
+                    <div class="card_1">
+                        <div class="card-1-header">
+                            <h3 style="color: rgb(3, 170, 3);">Money In</h3>
+                            <h3 style="color: rgb(235, 43, 43);">Money Out</h3>
+                        </div>
+                        <div class="card-1-amount">
+                            <h3 style="color: rgb(3, 170, 3);">₦350K</h3>
+                            <h3 style="color: rgb(235, 43, 43);">₦235K</h3>
+                        </div>
+                    </div>
+                    <div class="card_2">
+                        <div class="card-2-body">
+                            <h3 style="color: rgb(0, 183, 255);">Total Profit</h3>
+                            <h3 style="color: rgb(0, 183, 255); padding-top: 15px;">₦115K</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class = "card-section-2">
+                    <div class="card_3">
+                        <h3>Total Orders</h3>
+                        <h1 class="amount">200</h1>
+                    </div>
+                    <div class="card_4">
+                        <h3>Total Products</h3>
+                        <h1 class="amount">347</h1>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="Analysis.js"></script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="left-side-bar">
+            <div class="top">
+                <div class="trada">
+                    <h1>trada <span>.</span></h1>
+                </div>
+                <div class="left-item-one">
+                <p>MAIN</p>
+                <img class="left-item-one-img" src="assets\smart-home.png" alt="">
+                <img class="left-item-one-img" src="assets\Vector (1).png" alt="">
+                <img class="left-item-one-img" src="assets\shopping-cart.png" alt="">
+                </div>
+                <div class="left-item-two">
+                    <p>PROD</p>
+                    <img src="assets\box.png" alt="">
+                </div>
+                <div class="left-item-three">
+                    <p>ADMIN</p>
+                    <img src="assets\user-circle.png" alt="">
+                </div>
+            </div>
+            
+            <div class="bottom">
+                <div class="bottom-">
+                    <img src="assets\Vector.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="flex-container">
+            <div class="dash-head-one">
+               <h1 class="dash-head-h1">Dashboard</h1>
+               <div class="dash-btn">
+                <div class="dashboard">
+                    <!-- Main Dashboard content -->
+                    <button id="addProductBtn">Add New Product +</button>
+                    <!-- Popup Form -->
+                    <div id="popupForm" class="popup-form">
+                        <div class="form-container">
+                            <span class="close">&times;</span>
+                            <!-- <h2>Add New Product</h2> -->
+                            <form id="productForm">
+                                <div class="form-group">
+                                    <label for="productName">Product Name</label>
+                                    <input type="text" id="productName" name="productName" placeholder="Name of product / item" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="stock">Stock</label>
+                                    <input type="number" id="stock" name="stock" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="costPrice">Cost Price</label>
+                                    <input type="number" id="costPrice" name="costPrice" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="salePrice">Sale Price</label>
+                                    <input type="number" id="salePrice" name="salePrice" required>
+                                </div>
+                                <button type="submit">Add</button>
+                                <a href="#" id="addMoreItems">Add more items +</a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+               </div>
+               <div class="profile">
+                <img src="c:\Users\Yaktal\Desktop\Hub\Projects\TRADA\va\trada\trada\assets\dash-assets\notification-alert-svgrepo-com.svg" alt="">
+                <img src="trada/assets/Avatar.png" alt="">
+               </div>
+            </div>
+            <div class="dash-head-two">
+                <div class="item-list">
+                    <div >
+                        <button class="product" value="0" onclick="addToCart('Eva Water', 10.99, 0)">Eva Water</button>
+                    </div>
+                    
+                    <div >
+                        <button class="product" onclick="addToCart('Maltina Can', 15.99)">Maltina Can</button>
+                    </div>
+                    
+                    <div >
+                        <button class="product" onclick="addToCart('Swan Water', 7.99)">Swan Water</button>
+                    </div>
+                    
+                    <div >
+                        <button class="product" onclick="addToCart('Okpa', 1.99)">Okpa</button>
+                    </div>
+                </div>
+                <hr>
+                <div class="order" id="cart">
+                    <h2>Order:</h2>
+                    <ul class="cart-list" id="cart-items">
+                        <!-- Cart items will be displayed here -->
+                    </ul>
+                    <p class="cart-total">Total = $<span id="cart-total">0.00</span></p>
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        
+        <div >
+            
+        </div>
+    </div>
+        
+    <script src="create_sale.js"></script>
+</body>
+</html>

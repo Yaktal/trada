@@ -1,0 +1,212 @@
+@import url("utility.css");
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* outline: 1px solid red; */
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+}
+nav {
+    height: 10dvh;
+    padding: 0 4rem;
+    box-shadow: 0 0 0.2rem rgba(0, 0, 0, 0.5);
+}
+nav li {
+    list-style: none;
+    font-weight: bold;
+}
+nav a {
+    text-decoration: none;
+    color: #007b5e;
+}
+.logo{
+    font-size: 24px;
+    font-weight: 600;
+    color:  #007b5e;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.button{
+    background-color: #007b5e;
+    color: whitesmoke;
+    border-radius: 4px;
+    padding:8px 8px;
+}
+.desktop-navigation li {
+    margin-right: 2rem;
+}
+.bars {
+    width: 2.4rem;
+    height: 1.3rem;
+} 
+.bar {
+    background:  #007b5e;
+    height: 0.2rem;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.bars.active .bar:first-child {
+    transform: rotate(45deg) translateY(0.75rem);
+}
+.bars.active .bar:nth-child(2) {
+    opacity: 0;
+}
+.bars.active .bar:nth-child(3) {
+    transform: rotate(-45deg) translateY(-0.75rem);
+}
+.mobile-navigation {
+    position: fixed; 
+    width: 100%;
+    left: 0;
+    top: -50%;
+    border: 1px solid  #007b5e;
+    background-color: white;
+}
+.bars.active .mobile-navigation {
+    top: 10dvh;
+}
+.mobile-navigation li {
+    padding: 1rem;
+}
+.mobile-navigation li {
+    border-bottom: 1px solid  #007b5e;
+    font-size:1.5rem;
+    font-weight: 600;
+}
+.mobile-navigation li:last-child {
+    border-bottom: none;
+}
+/* .mobile-navigation li a{
+
+} */
+main {
+    height: 83dvh;
+    font-size: 3rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding:0 0 0.5rem 0.5rem;
+}
+
+.contact {
+    padding: 20px;
+    background-color: #f9f9f9; 
+    color:#007b5e;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+button {
+    background-color:  #007b5e; 
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 900px) {
+    nav {
+        padding: 0 2rem;
+    }
+    .res-d-none {
+        display: none;
+    }
+    .res-d-flex {
+        display: flex;
+    }
+    h1{
+        font-size: 2.8rem;
+        padding:1rem;
+    }
+    main{
+        margin-bottom: 20em;
+    }
+    .contact {
+        padding: 15px;
+    }
+
+    input,
+    textarea {
+        padding: 8px;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    h2 {
+        font-size: 1em;
+    }
+
+    p {
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (width: 360px) {
+    nav {
+        padding: 0 2rem;
+    }
+    .res-d-none {
+        display: none;
+    }
+    .res-d-flex {
+        display: flex;
+    }
+    h1{
+        font-size: 2.8rem;
+        padding:1rem;
+    }
+    main{
+        margin-top: -3em;
+    }
+    .contact {
+        padding: 15px;
+        font-size: 0.7em;
+    }
+
+    input,
+    textarea {
+        padding: 8px;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    h2 {
+        font-size: 1em;
+    }
+
+    p {
+        font-size: 0.9em;
+    }
+    .contact{
+        margin-bottom: 20px;
+    }
+}
